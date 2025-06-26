@@ -6,7 +6,7 @@ import app.models  # noqa: fuerza registro de modelos
 # Crea tablas
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="APP GAAAAAA")
+app = FastAPI(title="APP GAAAAAAaaaa")
 
 app.include_router(estilos.router)
 app.include_router(prediction.router)
@@ -15,3 +15,4 @@ app.include_router(prediction.router)
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8001)
+    
