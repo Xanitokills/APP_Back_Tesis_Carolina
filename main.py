@@ -10,3 +10,8 @@ app = FastAPI(title="APP GAAAAAA")
 
 app.include_router(estilos.router)
 app.include_router(prediction.router)
+
+# Inicia el servidor uvicorn
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
